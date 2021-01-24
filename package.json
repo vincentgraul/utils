@@ -1,0 +1,33 @@
+{
+  "name": "utils",
+  "private": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Vincent Graul",
+    "email": "vincent.graul@outlook.com",
+    "url": "http://vincentgraul.com"
+  },
+  "maintainers": [
+    {
+      "name": "Vincent Graul",
+      "email": "vincent.graul@outlook.com",
+      "url": "http://vincentgraul.com"
+    }
+  ],
+  "workspaces": {
+    "packages": [
+      "./packages/**"
+    ]
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
+    "lint": "lerna run lint",
+    "test": "lerna run test"
+  },
+  "devDependencies": {
+    "lerna": "^3.19.0",
+    "typescript": "^3.9.7"
+  }
+}
