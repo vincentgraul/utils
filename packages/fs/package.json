@@ -1,0 +1,27 @@
+{
+  "name": "@utils/fs",
+  "version": "1.0.0",
+  "main": "./build/fs.js",
+  "license": "MIT",
+  "author": {
+    "name": "Vincent Graul",
+    "email": "vincent.graul@outlook.com",
+    "url": "http://vincentgraul.com"
+  },
+  "maintainers": [
+    {
+      "name": "Vincent Graul",
+      "email": "vincent.graul@outlook.com",
+      "url": "http://vincentgraul.com"
+    }
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@types/node": "^14.14.20",
+    "@types/fs-extra": "^9.0.6",
+    "fs-extra": "^9.0.1",
+    "slash": "^3.0.0"
+  }
+}
