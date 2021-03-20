@@ -1,7 +1,7 @@
 {
-  "name": "utils",
-  "private": true,
+  "name": "@vincentgraul/utils",
   "version": "1.0.0",
+  "main": "./build/index.js",
   "license": "MIT",
   "author": {
     "name": "Vincent Graul",
@@ -15,19 +15,21 @@
       "url": "http://vincentgraul.com"
     }
   ],
-  "workspaces": {
-    "packages": [
-      "./packages/**"
-    ]
-  },
   "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "build": "lerna run build",
-    "lint": "lerna run lint",
-    "test": "lerna run test"
+    "build": "webpack"
+  },
+  "dependencies": {
+    "@types/node": "^14.14.20",
+    "@types/fs-extra": "^9.0.6",
+    "fs-extra": "^9.0.1",
+    "slash": "^3.0.0",
+    "execa": "^5.0.0"
   },
   "devDependencies": {
-    "lerna": "^3.19.0",
-    "typescript": "^3.9.7"
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.5.0",
+    "ts-loader": "^8.0.17",
+    "webpack-node-externals": "^2.5.2"
   }
 }
