@@ -2,9 +2,10 @@
 
 ## Utils for browser or Node.js
 
-| Util | Description                                |
-| ---- | ------------------------------------------ |
-| fs   | A fs util that adds some missing functions |
+| Util | Description                                 |
+| ---- | ------------------------------------------- |
+| fs   | A fs util that adds some missing functions  |
+| npm  | A npm util that adds some missing functions |
 
 ## License
 
