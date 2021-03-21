@@ -86,6 +86,7 @@ jspm_packages/
 .yarn-integrity
 .env
 .env.test
+yarn.lock
 
 ### VisualStudioCode ###
 .vscode

@@ -87,6 +87,7 @@ jspm_packages/
 .env.test
 webpack.config.js
 tsconfig.json
+yarn.lock
 
 ### VisualStudioCode ###
 .vscode
