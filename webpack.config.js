@@ -26,7 +26,6 @@ module.exports = {
     path: join(__dirname, "build"),
     library: "utils",
     libraryTarget: "umd",
-    libraryExport: "default",
     umdNamedDefine: true,
     globalObject: "this",
   },
