@@ -2,7 +2,11 @@
   "name": "@vincentgraul/utils",
   "version": "1.0.0",
   "main": "./build/index.js",
-  "license": "MIT",
+  "license": "GNU GPLV3",
+  "repository": "https://github.com/vincentgraul/utils.git",
+  "files": [
+    "build"
+  ],
   "author": {
     "name": "Vincent Graul",
     "email": "vincent.graul@outlook.com",
