@@ -1,16 +1,15 @@
 {
   "compilerOptions": {
     "target": "ES2015",
-    "module": "ES2015",
+    "module": "ESNext",
     "moduleResolution": "node",
     "declaration": true,
+    "declarationMap": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "removeComments": true,
-    "resolveJsonModule": true,
-    "outDir": "./build",
-    "declarationDir": "./build"
+    "resolveJsonModule": true
   },
-  "include": ["./src/**/*.ts"],
-  "exclude": ["./node_modules", "./build"]
+  "include": ["src"],
+  "exclude": ["src/**/*.test.ts"]
 }
