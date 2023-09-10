@@ -8,15 +8,17 @@ export interface Exception {
   message?: string;
 }
 
-function isBrowser(): boolean {
+export function isBrowser(): boolean {
   return typeof window !== "undefined";
 }
 
-function isServer(): boolean {
+export function isServer(): boolean {
   return typeof window === "undefined";
 }
 
-function isBrowserOrThrowException(e: Exception = getDefaultException(Platform.Browser)): boolean {
+export function isBrowserOrThrowException(
+  e: Exception = getDefaultException(Platform.Browser)
+): boolean {
   const value: boolean = isBrowser();
 
   if (!value) {
@@ -26,7 +28,9 @@ function isBrowserOrThrowException(e: Exception = getDefaultException(Platform.B
   return value;
 }
 
-function isServerOrThrowException(e: Exception = getDefaultException(Platform.Server)): boolean {
+export function isServerOrThrowException(
+  e: Exception = getDefaultException(Platform.Server)
+): boolean {
   const value: boolean = isServer();
 
   if (!value) {
@@ -36,21 +40,14 @@ function isServerOrThrowException(e: Exception = getDefaultException(Platform.Se
   return value;
 }
 
-function getDefaultException(platform: Platform): Exception {
+export function getDefaultException(platform: Platform): Exception {
   return { origin: "this function", message: `is not available in ${platform} environment` };
 }
 
-function formatException(exception: Exception, platform: Platform): string {
+export function formatException(exception: Exception, platform: Platform): string {
   const message: string = exception.message
     ? exception.message
     : getDefaultException(platform).message;
 
   return `${exception.origin} ${message}`;
 }
-
-export default {
-  isBrowser,
-  isServer,
-  isBrowserOrThrowException,
-  isServerOrThrowException,
-};

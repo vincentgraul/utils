@@ -2,7 +2,8 @@
   "compilerOptions": {
     "target": "ES2015",
     "module": "ESNext",
-    "moduleResolution": "node",
+    "outDir": "build",
+    "moduleResolution": "Node",
     "declaration": true,
     "declarationMap": true,
     "esModuleInterop": true,

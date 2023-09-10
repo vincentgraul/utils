@@ -1,7 +1,7 @@
 import { basename } from "path";
 import { Dirent, readdir } from "fs-extra";
 import slash from "slash";
-import Platform from "../platform";
+import { isServerOrThrowException } from "../platform";
 
 export interface Path {
   absolute: string;
@@ -13,8 +13,8 @@ export interface Folder {
   path: Path;
 }
 
-async function listFolders(path: string, excludes: string[] = []): Promise<Folder[]> {
-  Platform.isServerOrThrowException();
+export async function listFolders(path: string, excludes: string[] = []): Promise<Folder[]> {
+  isServerOrThrowException();
 
   const folders: Folder[] = [];
 
@@ -44,7 +44,3 @@ async function listFolders(path: string, excludes: string[] = []): Promise<Folde
 
   return folders;
 }
-
-export default {
-  listFolders,
-};
