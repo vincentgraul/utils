@@ -58,7 +58,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@types/node": "^22.18.13",
+    "@types/node": "^24.9.2",
     "@types/fs-extra": "^11.0.4",
     "fs-extra": "^11.3.2",
     "slash": "^5.1.0",
