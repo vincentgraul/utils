@@ -58,11 +58,11 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@types/node": "^24.19.0",
+    "@types/node": "^26.6.6",
     "@types/fs-extra": "^11.0.4",
     "fs-extra": "^11.4.1",
     "slash": "^5.1.0",
-    "execa": "^10.0.1"
+    "execa": "^10.2.1"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
